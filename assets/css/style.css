@@ -115,14 +115,25 @@ p {
 .btn:link,
 .btn:visited,
 .btn {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
     padding: 1rem 2.5rem;
-    color: #25b6c2;
-    background: #ffffff;
     border-radius: 25rem;
     margin-top: 3rem;
+    letter-spacing: .1rem;
+}
+
+.btn-md {
+    color: #535353;
+    border: .1rem solid #489dda;
+    cursor: pointer;
+}
+.btn-md:hover {
+    color: #fff;
+    background: #46bef5;
+    border: .1rem solid #535353;
+    transition: 1s;
 }
   /* NAVBAR */
 
@@ -190,6 +201,7 @@ a.navbar-brand.main-logo{
     transform: translate(-50%, -50%);
 }
 /*  SERVICES SECTION  */
+
 .services-section h3 {
     margin-top: 4rem;
     font-size: 1.8rem;
@@ -197,11 +209,12 @@ a.navbar-brand.main-logo{
     font-weight: 700;
     letter-spacing: .1rem;
 }
-.services-section .little-description{
+.services-section .service-text{
     color: #747474;
+    padding-right: 3rem;
 }
 .services-section .btn {
-    color: #535353;
+    margin-bottom: 3rem;
 }
 /*  FEATURES SECTION  */
 .features-section{
