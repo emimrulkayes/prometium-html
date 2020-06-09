@@ -339,14 +339,17 @@ a.navbar-brand.main-logo{
     font-weight: bold;
 }
 .team-member h4{
-    margin: 2rem 0;
+    margin-bottom: 1rem;
     color: #767676;
+}
+.team-member h5{
+  padding: 0;
 }
 .team-member img{
     width: 20rem;
     height: 20rem;
     padding: 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     border-radius: 50%;
 }
     /* PLANING SECTION */
