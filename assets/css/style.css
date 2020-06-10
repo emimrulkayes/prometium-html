@@ -133,12 +133,12 @@ p {
     color: #fff;
     background: #46bef5;
     border: .1rem solid #535353;
-    transition: 1s;
+    transition: .5s;
 }
   /* NAVBAR */
 
 a.navbar-brand.main-logo{
-    margin-top: 2rem;
+    margin-top: 2.8rem;
   }
 .nav-item{
     margin-top: 3rem !important;
@@ -260,6 +260,15 @@ a.navbar-brand.main-logo{
     text-align: center;
     background: #ffffff;
 }
+.customers-section .customer {
+   padding: 3rem;
+    background: #fff;
+    transition: transform .5s; /* Animation */
+    margin: 0 auto;
+}
+.customers-section .customer:hover {
+    transform: scale(1.1);
+}
 .owl-carousel .customer img{
     width: 15rem;
     height: 15rem;
@@ -332,6 +341,15 @@ a.navbar-brand.main-logo{
    text-align: center;
    background: #fff;
 }
+.team-section .team-member {
+    padding: 2rem;
+    background: #fff;
+    transition: transform .5s; /* Animation */
+    margin: 0 auto;
+}
+.team-section .team-member:hover {
+    transform: scale(1.2);
+}
 .team-member .title{
     color: #0bd7fc;
     font-size: 1.2rem;
@@ -345,7 +363,7 @@ a.navbar-brand.main-logo{
 .team-member h5{
   padding: 0;
 }
-.team-member img{
+.team-section .team-member img{
     width: 20rem;
     height: 20rem;
     padding: 2rem;
@@ -356,6 +374,29 @@ a.navbar-brand.main-logo{
 .planing-section{
     text-align: center;
     background: #fff;
+    position: relative;
+}
+.planing-section h2 {
+  margin-bottom: 7rem;
+}
+.planing-section .plan-item {
+    background: #fff;
+    transition: transform .5s; /* Animation */
+    margin: 0 auto;
+}
+.planing-section .plan-item:hover {
+    transform: scale(1.1);
+}
+.planing-section .plan-item {
+    padding-top: 4.5rem;
+    padding-bottom: 2rem;
+    border-radius: 1rem;
+}
+.planing-section .plan-item:hover {
+   background:  #fff;
+   border-top: .5rem solid #0bd7fc;
+   transition: .5s;
+  opacity: 1.0;
 }
 .planing-section p{
    color: #87959c;
@@ -380,8 +421,8 @@ a.navbar-brand.main-logo{
     font-weight: bold;
     color: #262b2f;
 }
-.planing-section .check-mark{
-    margin-top: 7rem;
+.planing-section .plan-item .check-mark {
+    margin-top: 6rem;
     font-size: 1.5rem;
     line-height: 2.8;
     color: #535353;
@@ -416,15 +457,15 @@ a.navbar-brand.main-logo{
     text-transform: capitalize;
     font-weight: bold;
     padding: 1rem 2rem;
-    cursor: pointer;
 }
 .planing-section .btn:hover{
     color: #fff;
     background: #0bd7fc;
+    transition: .5s;
 }
 .planing-section .active {
     color: #fff;
-    background: #6fe2fd;
+    background: #0bd7fc;
 }
     /* COLLABORATE SECTION */
 .collaborate-section{
@@ -448,20 +489,26 @@ a.navbar-brand.main-logo{
     text-align: center;
     padding: 0 2rem;
 }
-.coll .btn {
+.coll .btn-lg {
     color: #fff;
-    margin-top: 8rem;
     background: #23e1c8;
+    margin: 6rem;
 }
-.coll .btn::after {
-    color: #fff;
-    background-color: #23e1c8;
-}
-.coll .btn:hover{
-    color: #23e1c8;;
+.coll .btn-lg:hover {
+    color: #23e1c8;
     background: #fff;
-    border: .1rem solid #23e1c8;;
+    border: .1rem solid #23e1c8;
 }
+.coll .btn-lg::after {
+    content: '\25b6';
+    color: #fff;
+    margin-left: 1rem;
+}
+.coll .btn-lg:hover::after {
+    color: #23e1c8;
+}
+
+/*  FORM SECTION    */
 .form-section {
     background: url(bg-img/bg-from.png);
     margin: 0; padding: 0;
@@ -496,57 +543,95 @@ form {
     font-weight:400;
     margin-top: 2rem;
 }
-.checkbox {
+ .form-section .checkbox {
     font-size: 1.4rem;
     color: #5a6e79;
     text-align:left;
-    font-weight:400;
+    font-weight:600;
     margin-top: 2rem;
 }
-.btn-numbr .btn {
+.form-section .btn-numbr .btn{
     color: #fff;
     background: #0bd7fc;
-    padding: 1.5rem 3.5rem;
+    padding: 1rem 3.5rem;
+    margin-right: 1rem;
 }
-.btn-numbr .btn:hover {
+.form-section .btn-numbr .btn:hover {
     color: #0bd7fc;
     background: #fff;
+    border: 0.1rem solid #0bd7fc;
+}
+.form-section .form-group .btn-account {
+    font-size: 1.4rem;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    padding: 0 !important;
+    color: #87959c;
+    border-bottom: .1rem solid #87959c;
+}
+.form-section .form-group .btn-account:hover {
+    color: #25b6c2;
 }
 .form-group p {
     color: #5a6e79;
     padding: 0 2rem; 
+    margin-top: 2rem !important;
     display: inline-block;
 }
 .numbr {
     float: left;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: #6559dd;
     font-weight: bold;
+    margin-bottom: 3rem !important;
 }
 /*  FOOTER SECTION  */
 footer {
-    padding: 12rem 0;
+    padding-top: 15rem;
+    padding-bottom: 6rem;
 }
 .footer-section p {
-    text-transform: capitalize;
     line-height: 3;
     margin-top: 3rem;
-    text-decoration: none;
 }
+.footer-section p a {
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: #87959c;
+}
+.footer-section p a:hover {
+    color: #0bd7fc;
+ }
 .footer-section img {
     width: 25rem;
     height: 15rem;
     margin-top: 3.5rem;
 }
-.contact-icon {
+.footer-section .contact-icon a .fas {
+    color: #0bd7fc;
+}
+.footer-section .contact-icon a {
     margin-top: 3rem;
     line-height: 3;
+    text-decoration: none;
 }
-.contact-text {
+.footer-section .contact-icon .contact-text {
+    color: #87959c;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
     font-size: 1.3rem;
 }
+.footer-section .contact-icon .contact-text:hover {
+    color: #25b6c2;
+    border-bottom: 0.1rem solid #0bd7fc;
+}
 .fas {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     margin-right: 1rem;
 }
 .copyright p {
