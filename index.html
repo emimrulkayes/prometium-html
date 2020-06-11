@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <title>Prometium Responsive HTML</title>
-    <!-- BOOTSTRAP-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
@@ -16,7 +13,7 @@
     <!-- FONT AWESOME -->
     <script src="https://kit.fontawesome.com/19796de735.js" crossorigin="anonymous"></script>
     <!-- RESOURCES FILES-->
-    
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
@@ -24,15 +21,14 @@
 
 <body>
     <!-- START HEADER SECTION -->
-    <header class="header-section banner d-block img-fluid">
-        <nav class="navbar navbar-expand-md mx-auto">
+    <header class="header-section">
+        <nav class="navbar navbar-expand-lg mx-auto">
             <div class="container">
-                <div class="row">
-                    <a href="#showcase" class="navbar-brand main-logo"><img src="assets/img/main-logo.png"
-                            alt="main-logo" class="d-block img-fluid"></a>
-                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-bars"></i>
+                <div class="col-lg-2">
+                    <a href="#showcase" class="navbar-brand main-logo"><img src="assets/img/main-logo.png" alt="main-logo" class="d-block img-fluid"></a>
+                </div>
+                <div class="col-lg-7">
+                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><a href="#navbarNav"><i class="fas fa-bars"></i></a>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav mx-auto">
@@ -56,22 +52,33 @@
                             </li>
                         </ul>
                     </div>
+                </div>
+                <div class="col-lg-3 top-btn mr-auto">
                     <a class="btn btn-a" role="button" href="#">Login</a>
                     <a class="btn btn-b" role="button" href="#">Get Started</a>
                 </div>
             </div>
         </nav>
-        <div class="row featurette mx-auto">
-            <div class="col-md-6">
-                <img class="d-block img-fluid" src="assets/img/slide-img.png" alt="banner-img">
-            </div>
-            <div class="col-md-6">
-                <h1 class="mb-4">Our new Prometium theme if for everyone</h1>
-                <p class="little-description my-3">Duis autem vel eum iriure dolor in hendrerit in vulputate velit
-                    essemugiat nuesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
-                <a class="btn btn-lg" role="button" href="#">Get Started Today</a>
+        <div class="slider">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="slide-img">
+                        <img class="img-fluid" src="assets/img/slide-img.png" alt="banner-img">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="text">
+                        <h1 class="mb-4">Our new Prometium<br> theme if for everyone</h1>
+                        <p class="little-description my-3">Duis autem vel eum iriure dolor in hendrerit in vulputate
+                            velit esse <br>
+                            mugiat nuesent luptatum zzril delenit augue duis dolore te feugait <br> nulla facilisi.
+                        </p>
+                        <a class="btn btn-lg" role="button" href="#">Get Started Today</a>
+                    </div>
+                </div>
             </div>
         </div>
+
         <div class="mouse">
             <div class="point">
             </div>
@@ -183,68 +190,87 @@
                 <h2>What our customers say</h2>
             </div>
             <div class="row">
-                <div id="customer-carousel" class="owl-carousel owl-theme owl-dots owl-dot button span carousel-item flex">
+                <div id="customer-carousel"
+                    class="owl-carousel owl-theme owl-dots owl-dot button span carousel-item flex">
                     <div class="item">
                         <div class="customer">
                             <img src="assets/img/cus1.jpg" alt="img" class="d-block img-fluid mx-auto">
-                            <p class="little-description"><cite><q>“ Ut wisi enim ad minim veniam, uip exconsequat quis nostrud exer tation ullamcorper suscipit lobortis uip exconsequat. “</q></cite></p>
+                            <p class="little-description"><cite><q>“ Ut wisi enim ad minim veniam, uip exconsequat quis
+                                        nostrud exer tation ullamcorper suscipit lobortis uip exconsequat. “</q></cite>
+                            </p>
                             <h4><span>Jema Girson</span></h4>
                         </div>
                     </div>
                     <div class="item">
                         <div class="customer">
                             <img src="assets/img/cus0.jpg" alt="img" class="d-block img-fluid mx-auto">
-                            <p class="little-description"><cite><q>“ Ut wisi enim ad minim veniam, uip exconsequat quis nostrud exer tation ullamcorper suscipit lobortis uip exconsequat. “</q></cite></p>
+                            <p class="little-description"><cite><q>“ Ut wisi enim ad minim veniam, uip exconsequat quis
+                                        nostrud exer tation ullamcorper suscipit lobortis uip exconsequat. “</q></cite>
+                            </p>
                             <h4><span>Jema Girson</span></h4>
                         </div>
                     </div>
                     <div class="item">
                         <div class="customer">
                             <img src="assets/img/cus2.jpg" alt="img" class="d-block img-fluid mx-auto">
-                            <p class="little-description"><cite><q>“ Ut wisi enim ad minim veniam, uip exconsequat quis nostrud exer tation ullamcorper suscipit lobortis uip exconsequat. “</q></cite></p>
+                            <p class="little-description"><cite><q>“ Ut wisi enim ad minim veniam, uip exconsequat quis
+                                        nostrud exer tation ullamcorper suscipit lobortis uip exconsequat. “</q></cite>
+                            </p>
                             <h4><span>Jema Girson</span></h4>
                         </div>
                     </div>
                     <div class="item">
                         <div class="customer">
                             <img src="assets/img/cus3.jpg" alt="img" class="d-block img-fluid mx-auto">
-                            <p class="little-description"><cite><q>“ Ut wisi enim ad minim veniam, uip exconsequat quis nostrud exer tation ullamcorper suscipit lobortis uip exconsequat. “</q></cite></p>
+                            <p class="little-description"><cite><q>“ Ut wisi enim ad minim veniam, uip exconsequat quis
+                                        nostrud exer tation ullamcorper suscipit lobortis uip exconsequat. “</q></cite>
+                            </p>
                             <h4><span>Jema Girson</span></h4>
                         </div>
                     </div>
-                   
+
                     <div class="item">
                         <div class="customer">
                             <img src="assets/img/cus4.jpg" alt="img" class="d-bock img-fluid mx-auto">
-                            <p class="little-description"><cite><q>“ Ut wisi enim ad minim veniam, uip exconsequat quis nostrud exer tation ullamcorper suscipit lobortis uip exconsequat. “</q></cite></p>
+                            <p class="little-description"><cite><q>“ Ut wisi enim ad minim veniam, uip exconsequat quis
+                                        nostrud exer tation ullamcorper suscipit lobortis uip exconsequat. “</q></cite>
+                            </p>
                             <h4><span>Jema Girson</span></h4>
                         </div>
                     </div>
                     <div class="item">
                         <div class="customer">
                             <img src="assets/img/cus5.jpg" alt="img" class="d-block img-fluid mx-auto">
-                            <p class="little-description"><cite><q>“ Ut wisi enim ad minim veniam, uip exconsequat quis nostrud exer tation ullamcorper suscipit lobortis uip exconsequat. “</q></cite></p>
+                            <p class="little-description"><cite><q>“ Ut wisi enim ad minim veniam, uip exconsequat quis
+                                        nostrud exer tation ullamcorper suscipit lobortis uip exconsequat. “</q></cite>
+                            </p>
                             <h4><span>Jema Girson</span></h4>
                         </div>
                     </div>
                     <div class="item">
                         <div class="customer">
                             <img src="assets/img/cus6.jpg" alt="img" class="d-block img-fluid mx-auto">
-                            <p class="little-description"><cite><q>“ Ut wisi enim ad minim veniam, uip exconsequat quis nostrud exer tation ullamcorper suscipit lobortis uip exconsequat. “</q></cite></p>
+                            <p class="little-description"><cite><q>“ Ut wisi enim ad minim veniam, uip exconsequat quis
+                                        nostrud exer tation ullamcorper suscipit lobortis uip exconsequat. “</q></cite>
+                            </p>
                             <h4><span>Jema Girson</span></h4>
                         </div>
                     </div>
                     <div class="item">
                         <div class="customer">
                             <img src="assets/img/cus7.jpg" alt="img" class="d-block img-fluid mx-auto">
-                            <p class="little-description"><cite><q>“ Ut wisi enim ad minim veniam, uip exconsequat quis nostrud exer tation ullamcorper suscipit lobortis uip exconsequat. “</q></cite></p>
+                            <p class="little-description"><cite><q>“ Ut wisi enim ad minim veniam, uip exconsequat quis
+                                        nostrud exer tation ullamcorper suscipit lobortis uip exconsequat. “</q></cite>
+                            </p>
                             <h4><span>Jema Girson</span></h4>
                         </div>
                     </div>
                     <div class="item">
                         <div class="customer">
                             <img src="assets/img/cus8.jpg" alt="img" class="d-block img-fluid mx-auto">
-                            <p class="little-description"><cite><q>“ Ut wisi enim ad minim veniam, uip exconsequat quis nostrud exer tation ullamcorper suscipit lobortis uip exconsequat. “</q></cite></p>
+                            <p class="little-description"><cite><q>“ Ut wisi enim ad minim veniam, uip exconsequat quis
+                                        nostrud exer tation ullamcorper suscipit lobortis uip exconsequat. “</q></cite>
+                            </p>
                             <h4><span>Jema Girson</span></h4>
                         </div>
                     </div>
@@ -545,16 +571,18 @@
                     <form>
                         <div class="form-group">
                             <h4>Sign up for a free trial</h4>
-                         
+
                             <input type="text" class="form-control" id="InputName" placeholder="Fast Name">
-                        
+
                             <input type="text" class="form-control" id="InputName" placeholder="Last Name">
-                           
+
                             <input type="email" class="form-control" id="inputEmail" placeholder="E-Maill Address">
-                         
-                            <input type="password" class="form-control" id="inputPassword" placeholder="Choose Password">
-                       
-                            <input type="password" class="form-control" id="inputPassword" placeholder="Confirm Password">
+
+                            <input type="password" class="form-control" id="inputPassword"
+                                placeholder="Choose Password">
+
+                            <input type="password" class="form-control" id="inputPassword"
+                                placeholder="Confirm Password">
                             <div class="custom-control custom-checkbox">
                                 <input type="checkbox" class="custom-control-input form-control" id="customCheck1">
                                 <label class="custom-control-label checkbox" for="customCheck1">I agree with the terms
@@ -611,15 +639,16 @@
                     <h6>CONTACT US</h6>
                     <div class="contact-icon">
                         <div>
-                            <a href=""><i class="fas fa-map-marker-alt"></i><span class="contact-text">127 Sith Avenue,
+                            <a href="#"><i class="fas fa-map-marker-alt"></i><span class="contact-text">127 Sith Avenue,
                                     54571 New York City</span></a>
                         </div>
                         <div>
-                            <a href=""><i class="fas fa-phone-alt"></i><span class="contact-text">+49 123 456
+                            <a href="#"><i class="fas fa-phone-alt"></i><span class="contact-text">+49 123 456
                                     789</span></a>
                         </div>
                         <div>
-                            <a href=""><i class="fas fa-at"></i><span class="contact-text">info@prometium.com</span></a>
+                            <a href="#"><i class="fas fa-at"></i><span
+                                    class="contact-text">info@prometium.com</span></a>
                         </div>
                     </div>
                 </div>
@@ -634,7 +663,8 @@
                     <a href="#"><img src="assets/img/footer-logo.png" class="d-block img-fluid" alt=""></a>
                 </div>
                 <div class="copyright col-md-6 my-auto">
-                    <p class="pt-3">Copyright 2017 © <b>Prometium - Multi-Purpose PSD template</b> | All Rights Reserved</p>
+                    <p class="pt-3">Copyright 2017 © <b>Prometium - Multi-Purpose PSD template</b> | All Rights Reserved
+                    </p>
                 </div>
                 <div class="flat-icon col-md-3 pt-2">
                     <img src="assets/img/f-icon.png" alt="">
@@ -654,45 +684,43 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
-        <script src="assets/js/owl.carousel.min.js"></script>
-        <script>
-            $('#customer-carousel').owlCarousel({
-                loop:true,
-                margin:30,
-                nav:false,
-                responsive:{
-                    0:{
-                        items:1
-                    },
-                    600:{
-                        items:2
-                    },
-                    1000:{
-                        items:3
-                    }
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script>
+        $('#customer-carousel').owlCarousel({
+            loop: true,
+            margin: 30,
+            nav: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
                 }
-            });
-            $('#team-carousel').owlCarousel({
-                loop:true,
-                margin:30,
-                nav:false,
-                responsive:{
-                    0:{
-                        items:1
-                    },
-                    600:{
-                        items:3
-                    },
-                    1000:{
-                        items:4
-                    }
+            }
+        });
+        $('#team-carousel').owlCarousel({
+            loop: true,
+            margin: 30,
+            nav: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 4
                 }
-            })
-        </script>
-        
+            }
+        })
+    </script>
+
 </body>
 
 </html>
