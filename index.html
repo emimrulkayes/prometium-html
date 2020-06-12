@@ -22,61 +22,74 @@
 <body>
     <!-- START HEADER SECTION -->
     <header class="header-section">
-        <nav class="navbar navbar-expand-lg mx-auto">
+        <div class="header-menu">
             <div class="container">
-                <div class="col-lg-2">
-                    <a href="#showcase" class="navbar-brand main-logo"><img src="assets/img/main-logo.png" alt="main-logo" class="d-block img-fluid"></a>
-                </div>
-                <div class="col-lg-7">
-                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><a href="#navbarNav"><i class="fas fa-bars"></i></a>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav mx-auto">
-                            <li class="nav-item mr-3">
-                                <a class="nav-link" href="#">Home</a>
-                            </li>
-                            <li class="nav-item mx-4">
-                                <a class="nav-link" href="#">About Us</a>
-                            </li>
-                            <li class="nav-item mx-4">
-                                <a class="nav-link" href="#">Services</a>
-                            </li>
-                            <li class="nav-item mx-4">
-                                <a class="nav-link" href="#">Portfolio</a>
-                            </li>
-                            <li class="nav-item mx-4">
-                                <a class="nav-link" href="#">Our Blog</a>
-                            </li>
-                            <li class="nav-item ml-4">
-                                <a class="nav-link" href="#">Contact</a>
-                            </li>
-                        </ul>
+                <div class="row">
+                    <div class="col-2 ">
+                        <div class="logo-wrapper">
+                            <a href="#" class="navbar-brand main-logo d-block img-fluid"><img src="assets/img/main-logo.png"
+                                    alt="main-logo" class="d-block img-fluid"></a>
+                        </div>
+                    </div>
+                    <div class="col-7">
+                        <nav class="navbar navbar-expand-lg mx-auto">
+                            <!--
+                            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><a href="#navbarNav"><i class="fas fa-bars"></i></a>
+                            </button>-->
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav mx-auto">
+                                    <li class="nav-item mr-3">
+                                        <a class="nav-link" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item mx-4">
+                                        <a class="nav-link" href="#">About Us</a>
+                                    </li>
+                                    <li class="nav-item mx-4">
+                                        <a class="nav-link" href="#">Services</a>
+                                    </li>
+                                    <li class="nav-item mx-4">
+                                        <a class="nav-link" href="#">Portfolio</a>
+                                    </li>
+                                    <li class="nav-item mx-4">
+                                        <a class="nav-link" href="#">Our Blog</a>
+                                    </li>
+                                    <li class="nav-item ml-4">
+                                        <a class="nav-link" href="#">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col-3">
+                        <div class="top-right">
+                            <a class="btn btn-a" role="button" href="#">Login</a>
+                            <a class="btn btn-b" role="button" href="#">Get Started</a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-3 top-btn mr-auto">
-                    <a class="btn btn-a" role="button" href="#">Login</a>
-                    <a class="btn btn-b" role="button" href="#">Get Started</a>
-                </div>
             </div>
-        </nav>
+        </div>
         <div class="slider">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="slide-img">
-                        <img class="img-fluid" src="assets/img/slide-img.png" alt="banner-img">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="slide-img">
+                            <img class="img-fluid" src="assets/img/slide-img.png" alt="banner-img">
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="text">
-                        <h1 class="mb-4">Our new Prometium<br> theme if for everyone</h1>
-                        <p class="little-description my-3">Duis autem vel eum iriure dolor in hendrerit in vulputate
-                            velit esse <br>
-                            mugiat nuesent luptatum zzril delenit augue duis dolore te feugait <br> nulla facilisi.
-                        </p>
-                        <a class="btn btn-lg" role="button" href="#">Get Started Today</a>
+                    <div class="col-lg-6">
+                        <div class="slider-text">
+                            <h1 class="mb-4">Our new Prometium<br> theme if for everyone</h1>
+                            <p class="little-description my-3">Duis autem vel eum iriure dolor in hendrerit in vulputate
+                                velit esse <br>
+                                mugiat nuesent luptatum zzril delenit augue duis dolore te feugait <br> nulla facilisi.
+                            </p>
+                            <a class="btn btn-lg" role="button" href="#">Get Started Today</a>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
 
         <div class="mouse">
@@ -89,21 +102,21 @@
     <section class="services-section">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 service-item">
+                <div class="col-lg-4 service-item">
                     <img class="d-block img-fluid" src="assets/img/s-icona.png" alt="icon-img">
                     <h3>Creative ideas</h3>
                     <p class="service-text">Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
                         labore et dolor erat, sed diam voluptua.</p>
                     <a class="btn btn-md" role="button" href="#">Read More</a>
                 </div>
-                <div class="col-md-4 service-item">
+                <div class="col-lg-4 service-item">
                     <img class="d-block img-fluid" src="assets/img/s-iconb.png" alt="icon-img">
                     <h3>Awesome workspace</h3>
                     <p class="service-text">Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
                         labore et dolor erat, sed diam voluptua.</p>
                     <a class="btn btn-md" role="button" href="#">Read More</a>
                 </div>
-                <div class="col-md-4 service-item">
+                <div class="col-lg-4 service-item">
                     <img class="d-block img-fluid" src="assets/img/s-iconc.png" alt="icon-img">
                     <h3>Fantastic shapes</h3>
                     <p class="service-text">Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
@@ -122,7 +135,7 @@
                 <h2>Check the applications features</h2>
             </div>
             <div class="row">
-                <div class="col-6">
+                <div class="col-lg-6">
                     <div class="container">
                         <div id="MyCarousel" class="carousel slide" data-ride="carousel">
                             <ol class="carousel-indicators">
@@ -144,7 +157,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-lg-6">
                     <div class="features-items">
                         <div class="item-icon">
                             <img class="d-block img-fluid " src="assets/img/features1.png">
@@ -282,8 +295,9 @@
     <!-- START SEO SECTION -->
     <section class="seo-section bg-section">
         <div class="container">
+
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-lg-4 col-sm-12">
                     <img src="assets/img/seo-icon0.png">
                     <h4>MARKETING STRATEGIES</h4>
                     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -291,7 +305,7 @@
                         sadipscing elitr.
                     </p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-sm-12">
                     <img src="assets/img/seo-icon1.png">
                     <h4>MARKETING STRATEGIES</h4>
                     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -299,8 +313,8 @@
                         sadipscing elitr.
                     </p>
                 </div>
-                <div class="col-md-4 d-block">
-                    <img src="assets/img/seo-icon2.png">
+                <div class="col-lg-4 col-sm-12">
+                    <img class="d-block" src="assets/img/seo-icon2.png">
                     <h4>MARKETING STRATEGIES</h4>
                     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                         nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet, consetetur
@@ -309,7 +323,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-lg-4 col-sm-12">
                     <img src="assets/img/seo-icon3.png">
                     <h4>MARKETING STRATEGIES</h4>
                     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -317,7 +331,7 @@
                         sadipscing elitr.
                     </p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-sm-12">
                     <img src="assets/img/seo-icon4.png">
                     <h4>MARKETING STRATEGIES</h4>
                     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -325,7 +339,7 @@
                         sadipscing elitr.
                     </p>
                 </div>
-                <div class="col-md-4 d-block">
+                <div class="col-lg-4 col-sm-12">
                     <img src="assets/img/seo-icon5.png">
                     <h4>MARKETING STRATEGIES</h4>
                     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -334,6 +348,7 @@
                     </p>
                 </div>
             </div>
+
         </div>
     </section>
     <!-- END SEO SECTION -->
@@ -341,19 +356,19 @@
     <section class="value-section">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 value-item">
+                <div class="col-lg-4 value-item">
                     <h3>VALUE ONE</h3>
                     <h2>Our Philosophy</h2>
                     <p>Nam liber tempor cum eleifend option imperdiet doming id quod mazm,
                         quisnostrud exerci tation nihil imperdiet doming imperdiet domin ullamcorper suscipit.</p>
                 </div>
-                <div class="col-md-4 value-item">
+                <div class="col-lg-4 value-item">
                     <h3>VALUE TWO</h3>
                     <h2>Management</h2>
                     <p>Nam liber tempor cum soluta nobis eleifend option congue nihil
                         imperdietdoming id quod mazm, quis nihil imperdiet doming nostrud ullamcorper suscipit.</p>
                 </div>
-                <div class="col-md-4 value-item">
+                <div class="col-lg-4 value-item">
                     <h3>VALUE THREE</h3>
                     <h2>Company Solutions</h2>
                     <p class="value-three">Nam liber tempor soluta nobis cum soluta nobis eleifend
@@ -470,57 +485,65 @@
                 <h2>Our special product offers</h2>
             </div>
             <div class="row">
-                <div class="col-md-3 basic-plan plan-item">
-                    <h5 class="plan5">Basic Plan</h5>
-                    <p><span class="value"><sup>$</sup>49</span></p>
-                    <p><em>per month</em></p>
-                    <p class="check-mark">
-                        <span class="check-mark1">unlimited traffic</span><br>
-                        <span class="check-mark1">2GBdiskspace</span><br>
-                        <span class="check-mark1">100 GB monthlybandwidth</span><br>
-                        <span class="check-mark1">free securityservice</span><br>
-                        <span class="check-mark1">2dashboard accounts</span>
-                    </p>
-                    <a class="btn btn-md" role="button" href="#">Sign Up Now</a>
+                <div class="col-lg-3 col-md-6 col-sm-12 plan-item">
+                    <div class="basic-plan">
+                        <h5 class="plan5">Basic Plan</h5>
+                        <p><span class="value"><sup>$</sup>49</span></p>
+                        <p><em>per month</em></p>
+                        <p class="check-mark">
+                            <span class="check-mark1">unlimited traffic</span><br>
+                            <span class="check-mark1">2GBdiskspace</span><br>
+                            <span class="check-mark1">100 GB monthlybandwidth</span><br>
+                            <span class="check-mark1">free securityservice</span><br>
+                            <span class="check-mark1">2dashboard accounts</span>
+                        </p>
+                        <a class="btn btn-md" role="button" href="#">Sign Up Now</a>
+                    </div>
                 </div>
-                <div class="col-md-3 premium-plan plan-item">
-                    <h5 class="plan5">premium plan</h5>
-                    <p><span class="value"><sup>$</sup>69</span></p>
-                    <p><em>per month</em></p>
-                    <p class="check-mark">
-                        <span class="check-mark2">unlimited traffic</span><br>
-                        <span class="check-mark2">2GBdiskspace</span><br>
-                        <span class="check-mark2">100 GB monthlybandwidth</span><br>
-                        <span class="check-mark2">free securityservice</span><br>
-                        <span class="check-mark2">2dashboard accounts</span>
-                    </p>
-                    <a href="#" class="btn  btn-md active" role="button" aria-pressed="true">Sign Up Now</a>
+                <div class="col-lg-3 col-md-6 col-sm-12 plan-item">
+                    <div class="premium-plan">
+                        <h5 class="plan5">premium plan</h5>
+                        <p><span class="value"><sup>$</sup>69</span></p>
+                        <p><em>per month</em></p>
+                        <p class="check-mark">
+                            <span class="check-mark2">unlimited traffic</span><br>
+                            <span class="check-mark2">2GBdiskspace</span><br>
+                            <span class="check-mark2">100 GB monthlybandwidth</span><br>
+                            <span class="check-mark2">free securityservice</span><br>
+                            <span class="check-mark2">2dashboard accounts</span>
+                        </p>
+                        <a href="#" class="btn  btn-md active" role="button">Sign Up Now</a>
+                    </div>
                 </div>
-                <div class="col-md-3 business-plan plan-item">
-                    <h5 class="plan5">business plan</h5>
-                    <p><span class="value"><sup>$</sup>89</span></p>
-                    <p><em>per month</em></p>
-                    <p class="check-mark">
-                        <span class="check-mark3">unlimited traffic</span><br>
-                        <span class="check-mark3">2GBdiskspace</span><br>
-                        <span class="check-mark3">100 GB monthlybandwidth</span><br>
-                        <span class="check-mark3">free securityservice</span><br>
-                        <span class="check-mark3">2dashboard accounts</span>
-                    </p>
-                    <a class="btn btn-md" role="button" href="#">Sign Up Now</a>
+                <div class="col-lg-3 col-md-6 col-sm-12 plan-item">
+                    <div class="business-plan">
+                        <h5 class="plan5">business plan</h5>
+                        <p><span class="value"><sup>$</sup>89</span></p>
+                        <p><em>per month</em></p>
+                        <p class="check-mark">
+                            <span class="check-mark3">unlimited traffic</span><br>
+                            <span class="check-mark3">2GBdiskspace</span><br>
+                            <span class="check-mark3">100 GB monthlybandwidth</span><br>
+                            <span class="check-mark3">free securityservice</span><br>
+                            <span class="check-mark3">2dashboard accounts</span>
+                        </p>
+                        <a class="btn btn-md" role="button" href="#">Sign Up Now</a>
+                    </div>
                 </div>
-                <div class="col-md-3 ultimate-plan plan-item">
-                    <h5 class="plan5">ultimate plan</h5>
-                    <p><span class="value"><sup>$</sup>129</span></p>
-                    <p><em>per month</em></p>
-                    <p class="check-mark">
-                        <span class="check-mark4">unlimited traffic</span><br>
-                        <span class="check-mark4">2GBdiskspace</span><br>
-                        <span class="check-mark4">100 GB monthlybandwidth</span><br>
-                        <span class="check-mark4">free securityservice</span><br>
-                        <span class="check-mark4">2dashboard accounts</span>
-                    </p>
-                    <a class="btn btn-md" role="button" href="#">Sign Up Now</a>
+                <div class="col-lg-3 col-md-6 col-sm-12 plan-item">
+                    <div class="ultimate-plan">
+                        <h5 class="plan5">ultimate plan</h5>
+                        <p><span class="value"><sup>$</sup>129</span></p>
+                        <p><em>per month</em></p>
+                        <p class="check-mark">
+                            <span class="check-mark4">unlimited traffic</span><br>
+                            <span class="check-mark4">2GBdiskspace</span><br>
+                            <span class="check-mark4">100 GB monthlybandwidth</span><br>
+                            <span class="check-mark4">free securityservice</span><br>
+                            <span class="check-mark4">2dashboard accounts</span>
+                        </p>
+                        <a class="btn btn-md" role="button" href="#">Sign Up Now</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -533,29 +556,32 @@
                 <h3>OUR BUSINESS PARTNERS</h3>
                 <h2>We collaborate with others</h2>
             </div>
-            <div class="row coll">
-                <div class="col-md-3 coll-item">
-                    <img src="assets/img/coll0.png" class="d-block img-fluid">
-                    <h4>Business Solutions</h4>
-                    <p>Congue nihil imperdiet doming <br><em>option congue nihil.</em></p>
-                </div>
-                <div class="col-md-3 coll-item">
-                    <img src="assets/img/coll1.png" class="d-block img-fluid">
-                    <h4>Business Solutions</h4>
-                    <p>Congue nihil imperdiet doming<br><em>option congue nihil.</em></p>
-                </div>
-                <div class="col-md-3 coll-item">
-                    <img src="assets/img/coll2.png" class="d-block img-fluid">
-                    <h4>Business Solutions</h4>
-                    <p>Congue nihil imperdiet doming <br><em>option congue nihil.</em></p>
-                </div>
-                <div class="col-md-3 coll-item">
-                    <img src="assets/img/coll3.png" class="d-block img-fluid">
-                    <h4>Business Solutions</h4>
-                    <p>Congue nihil imperdiet doming <br><em>option congue nihil.</em></p>
+            <div class="coll">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12 coll-item">
+                        <img src="assets/img/coll0.png" class="d-block img-fluid">
+                        <h4>Business Solutions</h4>
+                        <p>Congue nihil imperdiet doming <br><em>option congue nihil.</em></p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 coll-item">
+                        <img src="assets/img/coll1.png" class="d-block img-fluid">
+                        <h4>Business Solutions</h4>
+                        <p>Congue nihil imperdiet doming<br><em>option congue nihil.</em></p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 coll-item">
+                        <img src="assets/img/coll2.png" class="d-block img-fluid">
+                        <h4>Business Solutions</h4>
+                        <p>Congue nihil imperdiet doming <br><em>option congue nihil.</em></p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 coll-item">
+                        <img src="assets/img/coll3.png" class="d-block img-fluid">
+                        <h4>Business Solutions</h4>
+                        <p>Congue nihil imperdiet doming <br><em>option congue nihil.</em></p>
+                    </div>
                 </div>
                 <a class="btn btn-lg mx-auto" role="button" href="#">Get Started Today</a>
             </div>
+        </div>
         </div>
     </section>
     <!-- END COLLABORATE SECTION -->
@@ -563,11 +589,11 @@
     <section class="form-section ">
         <div class="container bg-section">
             <div class="row">
-                <div class="col-md-7 form-left my-auto">
+                <div class="col-lg-7 form-left my-auto">
                     <h3>we are a group of experts</h3>
                     <h2>Are you ready to work faster?</h2>
                 </div>
-                <div class="row col-md-5">
+                <div class="row col-lg-5">
                     <form>
                         <div class="form-group">
                             <h4>Sign up for a free trial</h4>
@@ -604,7 +630,7 @@
     <footer class="footer-section">
         <div class="container">
             <div class="row">
-                <div class="col-md-2">
+                <div class="col-lg-2 col-md-6 col-sm-12">
                     <h6>get help</h6>
                     <p>
                         <a href="#">Help and FAQ</a><br>
@@ -613,7 +639,7 @@
                         <a href="#">Store location</a>
                     </p>
                 </div>
-                <div class="col-md-2">
+                <div class="col-lg-2 col-md-6 col-sm-12">
                     <h6>Information</h6>
                     <p>
                         <a href="#">About us</a><br>
@@ -622,7 +648,7 @@
                         <a href="#">Special info</a>
                     </p>
                 </div>
-                <div class="col-md-2">
+                <div class="col-lg-2 col-md-6 col-sm-12">
                     <h6>MY ACCOUNT</h6>
                     <p>
                         <a href="#">My order</a><br>
@@ -631,11 +657,11 @@
                         <a href="#">Login</a>
                     </p>
                 </div>
-                <div class="col-md-3">
+                <div class="col-lg-3 col-md-6 col-sm-12">
                     <h6>INSTAGRAM FEED</h6>
                     <img src="assets/img/insta.jpg" alt="INSTAGRAM FEED" class="d-block img fluid">
                 </div>
-                <div class="col-md-3">
+                <div class="col-lg-3 col-md-6 col-sm-12">
                     <h6>CONTACT US</h6>
                     <div class="contact-icon">
                         <div>
@@ -659,14 +685,14 @@
     <div class="footer-end">
         <div class="container">
             <div class="row py-5">
-                <div class="logo col-md-3">
+                <div class="logo col-lg-3">
                     <a href="#"><img src="assets/img/footer-logo.png" class="d-block img-fluid" alt=""></a>
                 </div>
-                <div class="copyright col-md-6 my-auto">
+                <div class="copyright col-lg-6 my-auto">
                     <p class="pt-3">Copyright 2017 © <b>Prometium - Multi-Purpose PSD template</b> | All Rights Reserved
                     </p>
                 </div>
-                <div class="flat-icon col-md-3 pt-2">
+                <div class="flat-icon col-lg-3 pt-2">
                     <img src="assets/img/f-icon.png" alt="">
                     <img src="assets/img/f-icon1.png" alt="">
                     <img src="assets/img/f-icon2.png" alt="">
@@ -686,6 +712,7 @@
         crossorigin="anonymous"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
     <script>
         $('#customer-carousel').owlCarousel({
             loop: true,
@@ -718,7 +745,7 @@
                     items: 4
                 }
             }
-        })
+        });
     </script>
 
 </body>

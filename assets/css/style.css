@@ -19,7 +19,7 @@ body{
     background-repeat: no-repeat;
     background-position: top top;
     position: relative;
-    height: 100vh;
+    height: 85vh;
 }
 .nav-link{
     color: #fff;
@@ -35,7 +35,7 @@ section{
 .bg-section{
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center top;
     position: relative;
 }
 .banner{
@@ -52,40 +52,38 @@ section{
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
+    width: 100%;
 }
 h1{
     font-size: 4.2rem;
     color: #fff;
-    font-weight: bold;
-    margin-top: 8rem;
+    font-weight: 700;
+    margin-top: 10rem;
 }
 h2{
-    width: 100%;
+ 
     font-size: 3.2rem;
     color: #202020;
     font-weight: 700;
     margin-top: 1.5rem; 
     margin-bottom: 8rem;
 }
-h3{
-    width: 100%;
+h3 {
     font-size: 1.5rem;
     color: #87959c;
     font-weight: 400;
     letter-spacing: .5rem;
 }
-h4{
-    width: 100%;
+h4 {
     font-size: 1.4rem;
     color: #fff;
     font-weight: 700;
     margin-top: 4rem;
 }
-h5{
-    width: 100%;
+h5 {
     padding-top: 3rem;
     font-size: 1.6rem;
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
     color: black;
     letter-spacing: .1rem;
@@ -95,6 +93,7 @@ h6 {
     font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: 700;
+    margin-top: 3rem;
 }
 .little-description{
     font-size: 1.8rem;
@@ -133,43 +132,59 @@ p {
     transition: .5s;
 }
   /* NAVBAR */
-.navbar {
-   
+.header-menu {
+    width: 100%;
 }
-.navbar a.navbar-brand.main-logo{
+.header-sticky {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin: 0 !important;
+    padding-bottom: 1rem;
+    z-index: 1002;
+    background: url(bg-img/body-bg.png);
+    animation-name: animationFade;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+
+}
+
+.logo-wrapper a.main-logo{
     margin-top: 2.8rem;
   }
 .nav-item{
-    margin-top: 3rem !important;
+    margin-top: 3rem;
 }
 .nav-link{
     font-family: 'Raleway', sans-serif;
     font-size: 1.4rem;
     font-weight: 600;
 }
-.header-section .top-btn {
+.header-section .top-right {
     padding: 0;
+    display: inline-block;
 }
-.header-section .top-btn a.btn-a {
+.header-section .top-right a.btn-a {
     margin-top: 2.8rem !important;
     color: #5480dd;
     background: #fff;
-    margin-right: 2rem;
+    margin-right: 1rem;
     font-family: 'Raleway', sans-serif;
 }
-.header-section .top-btn a.btn-a:hover{
+.header-section .top-right a.btn-a:hover{
    color: #fff;
    background: #5974de;
    border: .1rem solid #fff;
 }
-.header-section .top-btn a.btn-b {
+.header-section .top-right a.btn-b {
     margin-top: 2.8rem !important;
     color: #fff;
     background: #5a73de;
     border: .1rem solid #fff;
     font-family: 'Raleway', sans-serif;
 }
-.header-section .top-btn a.btn-b:hover {
+.header-section .top-right a.btn-b:hover {
    color: #5480dd;
    background: #fff;
 }
@@ -182,18 +197,18 @@ p {
 }
    /* BANNER AREA */
 
-.slider{
-width: 100%;
-height: 100vh;
-position: relative;
-
+.slider{ 
+    margin-top: 8rem;
+    padding-top: 3rem;
+    position: relative;
 }
+/*
 .header-section .slider {
-    position: absolute;
+     position: absolute;
     left: 50%;
     top: 70%;
-    transform: translate(-50%, -50%);
-}
+    transform: translate(-50%, -50%); */
+
 .slider .btn-lg {
     color: #25b6c2;
     background: #fff;
@@ -314,7 +329,9 @@ position: relative;
 
         /* SEO SECTION */   
 .seo-section{
-    background: url(bg-img/bg.png);
+    background: url(bg-img/body-bg.png);
+    width: 100%;
+    height: 100%;
 }
 .seo-section img{
    margin: 1rem 0;
@@ -331,6 +348,9 @@ position: relative;
 .value-item h2{
     font-size: 2.2rem;
     margin: 2rem 0;
+}
+.value-item h3{
+    margin-top: 2rem;
 }
 .value-item p{ 
     color: #949494;
@@ -423,11 +443,11 @@ position: relative;
 }
 .planing-section .value{
     font-size: 3.2rem;
-    font-weight: bold;
+    font-weight: 700;
     color: #262b2f;
 }
 .planing-section .plan-item .check-mark {
-    margin-top: 5rem;
+    margin-top: 4rem;
     font-size: 1.5rem;
     line-height: 2.8;
     color: #535353;
@@ -462,11 +482,12 @@ position: relative;
     text-transform: capitalize;
     font-weight: bold;
     padding: 1rem 2rem;
+    margin-bottom: 1rem;
 }
 .planing-section .btn:hover{
     color: #fff;
     background: #0bd7fc;
-    transition: .5s;
+    transition: .4s;
 }
 .planing-section .active {
     color: #fff;
@@ -485,6 +506,7 @@ position: relative;
     width: 8ren;
     height: 8rem;
     margin: 0 auto;
+    margin-top: 2rem;
 }
 .coll h4 {
     color: #171717;
