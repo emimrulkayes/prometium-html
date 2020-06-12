@@ -19,7 +19,7 @@ body{
     background-repeat: no-repeat;
     background-position: top top;
     position: relative;
-    height: 85vh;
+    height: 95vh;
 }
 .nav-link{
     color: #fff;
@@ -160,7 +160,13 @@ p {
     font-family: 'Raleway', sans-serif;
     font-size: 1.4rem;
     font-weight: 600;
+    color: #fff;
 }
+.nav-item .nav-link::after:hover {
+    content: '';
+ 
+}
+
 .header-section .top-right {
     padding: 0;
     display: inline-block;
@@ -198,17 +204,12 @@ p {
    /* BANNER AREA */
 
 .slider{ 
-    margin-top: 8rem;
-    padding-top: 3rem;
+    margin-top: 3rem;
     position: relative;
 }
-/*
-.header-section .slider {
-     position: absolute;
-    left: 50%;
-    top: 70%;
-    transform: translate(-50%, -50%); */
-
+.slider .slide-img img {
+    max-width: 100%;
+}
 .slider .btn-lg {
     color: #25b6c2;
     background: #fff;
