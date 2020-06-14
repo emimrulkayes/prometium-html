@@ -17,6 +17,10 @@
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!--
+    <link rel="stylesheet" href="assets/css/sass.scss">
+    -->
 </head>
 
 <body>
@@ -27,8 +31,8 @@
                 <div class="row">
                     <div class="col-2 ">
                         <div class="logo-wrapper">
-                            <a href="#" class="navbar-brand main-logo d-block img-fluid"><img
-                                    src="assets/img/main-logo.png" alt="main-logo" class="d-block img-fluid"></a>
+                            <a href="#" class="main-logo d-block img-fluid"><img src="assets/img/main-logo.png"
+                                    alt="main-logo" class="header-brand d-block img-fluid"></a>
                         </div>
                     </div>
                     <div class="col-7">
@@ -39,22 +43,22 @@
                             <div class="collapse navbar-collapse" id="navbarNav">
                                 <ul class="navbar-nav mx-auto">
                                     <li class="nav-item mr-3">
-                                        <a class="nav-link" href="#">Home</a>
+                                        <a class="nav-link" href="#home">Home</a>
                                     </li>
                                     <li class="nav-item mx-4">
-                                        <a class="nav-link" href="#">About Us</a>
+                                        <a class="nav-link" href="#about">About Us</a>
                                     </li>
                                     <li class="nav-item mx-4">
-                                        <a class="nav-link" href="#">Services</a>
+                                        <a class="nav-link" href="#service">Services</a>
                                     </li>
                                     <li class="nav-item mx-4">
-                                        <a class="nav-link" href="#">Portfolio</a>
+                                        <a class="nav-link" href="#portfolil">Portfolio</a>
                                     </li>
                                     <li class="nav-item mx-4">
-                                        <a class="nav-link" href="#">Our Blog</a>
+                                        <a class="nav-link" href="#blog">Our Blog</a>
                                     </li>
                                     <li class="nav-item ml-4">
-                                        <a class="nav-link" href="#">Contact</a>
+                                        <a class="nav-link" href="#contact">Contact</a>
                                     </li>
                                 </ul>
                             </div>
@@ -74,15 +78,15 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="slide-img">
-                            <img class="img-fluid" src="assets/img/slide-img.png" alt="banner-img">
+                            <img class="d-block img-fluid banner-img" src="assets/img/slide-img.png" alt="slide-img">
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="slider-text">
                             <h1 class="mb-4">Our new Prometium<br> theme if for everyone</h1>
                             <p class="little-description my-3">Duis autem vel eum iriure dolor in hendrerit in vulputate
-                                velit esse <br>
-                                mugiat nuesent luptatum zzril delenit augue duis dolore te feugait <br> nulla facilisi.
+                                velit esse mugiat nuesent luptatum zzril delenit augue duis dolore te feugait nulla
+                                facilisi.
                             </p>
                             <a class="btn btn-lg" role="button" href="#">Get Started Today</a>
                         </div>
@@ -99,7 +103,7 @@
     </header>
     <!-- END HEADER SECTION -->
     <!-- START SERVICES SECTION -->
-    <section class="services-section">
+    <section class="services-section" id="service">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 service-item">
@@ -595,7 +599,7 @@
     </section>
     <!-- END COLLABORATE SECTION -->
     <!-- START FORM SECTION -->
-    <section class="form-section ">
+    <section class="form-section" id="contact">
         <div class="container bg-section">
             <div class="row">
                 <div class="col-lg-7 form-left my-auto">
@@ -639,7 +643,7 @@
     <footer class="footer-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-2 col-md-6 col-sm-12">
+                <div class="col-lg-2 col-md-2 col-sm-6">
                     <h6>get help</h6>
                     <p>
                         <a href="#">Help and FAQ</a><br>
@@ -648,7 +652,7 @@
                         <a href="#">Store location</a>
                     </p>
                 </div>
-                <div class="col-lg-2 col-md-6 col-sm-12">
+                <div class="col-lg-2 col-md-2 col-sm-6">
                     <h6>Information</h6>
                     <p>
                         <a href="#">About us</a><br>
@@ -657,7 +661,7 @@
                         <a href="#">Special info</a>
                     </p>
                 </div>
-                <div class="col-lg-2 col-md-6 col-sm-12">
+                <div class="col-lg-2 col-md-2 col-sm-6">
                     <h6>MY ACCOUNT</h6>
                     <p>
                         <a href="#">My order</a><br>
@@ -666,24 +670,24 @@
                         <a href="#">Login</a>
                     </p>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
+
+                <div class="col-lg-3 col-md-6 col-sm-6">
                     <h6>INSTAGRAM FEED</h6>
-                    <img src="assets/img/insta.jpg" alt="INSTAGRAM FEED" class="d-block img fluid">
+                    <div class="instagram-img">
+                        <img src="assets/img/insta.jpg" alt="INSTAGRAM FEED" class="d-block img fluid">
+                    </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="col-lg-3 col-md-6 col-sm-6">
                     <h6>CONTACT US</h6>
                     <div class="contact-icon">
                         <div>
-                            <a href="#"><i class="fas fa-map-marker-alt"></i><span class="contact-text">127 Sith Avenue,
-                                    54571 New York City</span></a>
+                            <a href="#"><i class="fas fa-map-marker-alt"></i><span class="contact-text">54571 New York City </span></a>
                         </div>
                         <div>
-                            <a href="#"><i class="fas fa-phone-alt"></i><span class="contact-text">+49 123 456
-                                    789</span></a>
+                            <a href="#"><i class="fas fa-phone-alt"></i><span class="contact-text">+49 123 456 789</span></a>
                         </div>
                         <div>
-                            <a href="#"><i class="fas fa-at"></i><span
-                                    class="contact-text">info@prometium.com</span></a>
+                            <a href="#"><i class="fas fa-at"></i><span class="contact-text">info@prometium.com</span></a>
                         </div>
                     </div>
                 </div>
@@ -694,19 +698,19 @@
     <div class="footer-end">
         <div class="container">
             <div class="row py-5">
-                <div class="logo col-lg-3">
+                <div class="logo col-md-sm-lg-2">
                     <a href="#"><img src="assets/img/footer-logo.png" class="d-block img-fluid" alt=""></a>
                 </div>
-                <div class="copyright col-lg-6 my-auto">
-                    <p class="pt-3">Copyright 2017 © <b>Prometium - Multi-Purpose PSD template</b> | All Rights Reserved
+                <div class="col-lg-md-sm-7">
+                    <p class="pt-3 px-2">Copyright 2017 © <b>Prometium - Multi-Purpose PSD template</b> | All Rights Reserved
                     </p>
                 </div>
-                <div class="flat-icon col-lg-3 pt-2">
-                    <img src="assets/img/f-icon.png" alt="">
-                    <img src="assets/img/f-icon1.png" alt="">
-                    <img src="assets/img/f-icon2.png" alt="">
-                    <img src="assets/img/f-icon3.png" alt="">
-                    <img src="assets/img/f-icon4.png" alt="">
+                <div class="flat-icon col-md-sm-lg-3 pt-2">
+                    <img src="assets/img/f-icon.png" alt="#">
+                    <img src="assets/img/f-icon1.png" alt="#">
+                    <img src="assets/img/f-icon2.png" alt="#">
+                    <img src="assets/img/f-icon3.png" alt="#">
+                    <img src="assets/img/f-icon4.png" alt="#">
                 </div>
             </div>
         </div>
